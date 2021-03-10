@@ -62,10 +62,8 @@ public class Main { // 1
 
     public void year(int i) {
         if (i > 3) {
-            if (i % 4 == 0) {
-                if (i % 100 != 0 || i % 400 == 0)
-                    System.out.println("Число является високосным");
-                else System.out.println("Число не является високосным");
+            if (i % 4 == 0 && (i % 100 != 0 || i % 400 == 0)) {
+                System.out.println("Число является високосным");
             } else System.out.println("Число не является високосным");
         }
     }
